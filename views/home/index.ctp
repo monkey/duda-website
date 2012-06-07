@@ -13,7 +13,7 @@
           <p>
  It has been designed to
              be very scalable with low memory and CPU consumption, the perfect solution for embedded
-             devices. Made for ARM, x86 and x64.
+             devices. Made for ARM, x86 and x86_64.
              <br><br>
           </p>
 
@@ -37,11 +37,8 @@
            <br>
            <h2>Shortcuts</h2>
 		<ul>
-        		<li><a href='http://monkey-project.com/releases'>All Downloads</a></li>
 			<li><a href='http://git.monkey-project.com'>Browse Code</a></li>
-			<li><a href='http://bugs.monkey-project.com'>Bug Tracker</a></li>
 			<li><a href='http://lists.monkey-project.com'>Mailing Lists</a></li>
-                        <li><a href='http://blog.monkey-project.com'>Monkeys Blog</a></li>
 		</ul>
         </div>
 
