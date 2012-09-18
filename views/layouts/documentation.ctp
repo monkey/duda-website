@@ -1,27 +1,3 @@
-<?php
-/* SVN FILE: $Id: default.ctp 7945 2008-12-19 02:16:01Z gwoo $ */
-/**
- *
- * PHP versions 4 and 5
- *
- * CakePHP(tm) :  Rapid Development Framework (http://www.cakephp.org)
- * Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @filesource
- * @copyright     Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
- * @link          http://www.cakefoundation.org/projects/info/cakephp CakePHP(tm) Project
- * @package       cake
- * @subpackage    cake.cake.console.libs.templates.skel.views.layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @version       $Revision: 7945 $
- * @modifiedby    $LastChangedBy: gwoo $
- * @lastmodified  $Date: 2008-12-18 18:16:01 -0800 (Thu, 18 Dec 2008) $
- * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
- */
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -53,7 +29,7 @@
                   <? echo $html->image('monkey_head.png'); ?>
               </div>
               <div class="span8">
-                  <? echo $html->link('Monkey',
+                  <? echo $html->link('Duda I/O',
                                       array('controller' => '/'),
                                       array('class' => 'brand', 'style' => 'color: #eae8d2;'));
                   ?>
@@ -72,21 +48,8 @@
                                                          'action' => 'community'));
                   ?>
                   </li>
-                  <li class="">
-                  <? echo $html->link('Announcements', array('controller' => 'Announcements',
-                                                             'action' => 'Welcome'));
-                  ?>
-                  </li>
-                  <li class="">
-                  <? echo $html->link('Embedded', array('controller' => 'home',
-                                                        'action' => 'embedded'));
-                  ?>
-                  </li>
                   <li class="divider-vertical"></li>
 
-                  <li class="active">
-                  <? echo $html->link('Donate - support us!', array('controller' => 'Donate')); ?>
-                  </li>
                   </ul>
              </div> <!-- end span8 -->
           </div> <!-- end row fluid -->
@@ -102,31 +65,19 @@
            <!-- Left menu -->
            <ul class="nav nav-list">
                <li class="nav-header">
-                  ADMINISTRATION
+                  GETTING STARTED
                </li>
                <li>
-                  <?=$html->link('Installation', array('action' => 'installation'));?>
+                  <?=$html->link('Overview', array('action' => 'overview'));?>
+               </li>
+               <li>
+                  <?=$html->link('DudaC - Client Manager', array('action' => 'dudac'));?>
                </li>
                <li class="nav-header">
-                  Tutorials & FAQ
+                  Tutorials
                </li>
                <li>
-                  <?=$html->link('Basic Authentication', array('action' => 'basic_authentication'));?>
-               </li>
-               <li>
-                  <?=$html->link('Cheetah! Shell', array('action' => 'cheetah_shell'));?>
-               </li>
-               <li>
-                  <?=$html->link('Debian & Ubuntu Packages', array('action' => 'debian_ubuntu'));?>
-               </li>
-               <li>
-                  <?=$html->link('IPv6', array('action' => 'ipv6'));?>
-               </li>
-               <li>
-                  <?=$html->link('Mandril Security Plugin', array('action' => 'mandril'));?>
-               </li>
-               <li>
-                  <?=$html->link('Virtual Hosts', array('action' => 'virtual_hosts'));?>
+                  <?=$html->link('Hello World ! in 5 steps', array('action' => 'hello_world_5_steps'));?>
                </li>
              </ul>
       </div>
@@ -137,7 +88,7 @@
     </div>
     <hr>
     <footer>
-        <p>&copy; Copyright 2001 – 2012 / Monkey HTTP Daemon development group</p>
+      <p>&copy; Copyright 2012 / Duda I/O - Eduardo Silva</p>
       </footer>
    </div> <!-- container -->
 

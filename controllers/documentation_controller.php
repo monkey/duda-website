@@ -8,36 +8,16 @@ class DocumentationController extends AppController {
 	function index(){
 	}
 
-        function installation() {
-          $this->pageTitle = 'Installation';
-        }
-
         function overview() {
-          $this->pageTitle = 'Overview';
+          $this->pageTitle = 'Duda: Overview';
         }
 
-        function ipv6() {
-          $this->pageTitle = 'IPv6';
+        function dudac() {
+          $this->pageTitle = 'DudaC - Client Manager';
         }
 
-        function basic_authentication() {
-          $this->pageTitle = 'Basic Authentication';
-        }
-
-        function cheetah_shell() {
-          $this->pageTitle = 'Cheetah! Shell';
-        }
-
-        function debian_ubuntu() {
-          $this->pageTitle = 'Debian & Ubuntu packages';
-        }
-
-        function mandril() {
-          $this->pageTitle = 'Mandril Security';
-        }
-
-        function virtual_hosts() {
-          $this->pageTitle = 'Virtual Hosts';
+        function hello_world_5_steps() {
+          $this->pageTitle = 'Duda: Hello World! in 5 steps';
         }
 
         function beforeFilter() {

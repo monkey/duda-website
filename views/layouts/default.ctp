@@ -77,7 +77,7 @@
       <?php echo $content_for_layout; ?>
     <hr>
     <footer>
-        <p>&copy; Copyright 2012 / Monkey HTTP Daemon development group</p>
+        <p>&copy; Copyright 2012 / Duda I/O - Eduardo Silva</p>
       </footer>
    </div> <!-- /container -->
 
