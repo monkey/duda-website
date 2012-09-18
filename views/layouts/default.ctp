@@ -53,7 +53,7 @@
                   <? echo $html->image('monkey_head.png'); ?>
               </div>
               <div class="span10">
-                  <? echo $html->link('Duda',
+                  <? echo $html->link('Duda I/O',
                                       array('controller' => '/'),
                                       array('class' => 'brand', 'style' => 'color: #eae8d2;'));
                   ?>
@@ -61,7 +61,11 @@
                   <div class="nav-collapse collapse">
                   <ul class="nav">
                   <li class="">
-                  <? echo $html->link('About', array('controller' => 'home', 'action' => 'about')); ?>
+                  <? echo $html->link('About', array('controller' => 'documentation',
+                                                     'action' => 'overview')); ?>
+                  </li>
+                  <li class="">
+                  <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
                   </li>
                   </ul>
              </div> <!-- end span8 -->

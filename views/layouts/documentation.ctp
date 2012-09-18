@@ -37,17 +37,13 @@
                   <div class="nav-collapse collapse">
                   <ul class="nav">
                   <li class="">
-                  <? echo $html->link('About', array('controller' => 'home', 'action' => 'about')); ?>
+                  <? echo $html->link('About', array('controller' => 'documentation',
+                                                     'action' => 'overview')); ?>
                   </li>
                   <li class="">
                   <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
                   </li>
 
-                  <li class="">
-                  <? echo $html->link('Community', array('controller' => 'home',
-                                                         'action' => 'community'));
-                  ?>
-                  </li>
                   <li class="divider-vertical"></li>
 
                   </ul>

@@ -25,7 +25,7 @@
                   </a>
             </div>
             <div class="span6" style="text-align:center">
-                  <a class="btn btn-info btn-large" href="./about">
+                  <a class="btn btn-info btn-large" href="./documentation/overview">
                   <i class="icon-white icon-info-sign"></i>
                   Learn more... &raquo;</a>
             </div>
@@ -91,28 +91,11 @@
       </div>
       <div class="row">
           <div class="span12">
-                 <h2>API</h2>
+                 <h2>Join us!</h2>
                  <p>
-                    Duda framework offers an easy to use API which expose core objects and the availability to include packages:
-                    <h3>Core Objects</h3>
-                    <ul>
-                      <li>Global: handle global variables</li>
-                      <li>Param: manage URL parameters or POST content</li>
-                      <li>Sendfile: send a file using asynchronous mechanism</li>
-                      <li>Session: helper to handle user sessions</li>
-                      <li>Utils: utilities</li>
-                      <li>XTime: time related methods</li>
-                      <li>Console: print out information from the webservice</li>
-                      <li>Debug: debug object to trace the web service behavior</li>
-                    </ul>
-
-                    <h3>Packages</h3>
-                    <ul>
-                      <li>SHA1: provides SHA1 encription routines</li>
-                      <li>Base64: provides Base64 encription routines</li>
-                      <li>JSon: object to compose JSON content</li>
-                      <li>SQLite: object to manage a SQLite DB instance</li>
-                    </ul>
+                    If you are interested into participate on this project feel free to contact us
+                    on irc.freenode.net #monkey or through our new
+                    <a href="http://lists.monkey-project.com/listinfo/duda">mailing list</a>.
                  </p>
         <br>
           </div>
