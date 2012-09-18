@@ -49,10 +49,9 @@
                  <h2>Why Duda ?</h2>
                   <p></p>
 	          <p>
-                       Most of web services implementations around lack of good perfomance and in order to have an optimal performance requires
-                        to consume high system resources.
+                       Most of web services implementations around lack of good perfomance and requires high system resources.
                        As opposite, Duda is built with high performance and low resources consumption in mind, it takes the most of Monkey web server
-                       to archieve it goals.
+                       to achieve it goals.
  	          </p>
                   <p>
                        We invite you to review our initial blog post about Duda and a comparisson about performance and resources usage:
@@ -82,8 +81,8 @@
                   following packages are available: Websocket, JSON, SQLite, SHA1 and Base64.
                </p>
                <p>
-                  The networking model is based in asynchronous sockets balanced through a number of fixed threads, on this way it archieve huge performance
-                  and scale properly ondemand.
+                  The networking model is based in asynchronous sockets balanced through a number of fixed threads, on this way it achieve high performance
+                  and scale properly on demand.
                </p>
           </div>
           <div class="span3">

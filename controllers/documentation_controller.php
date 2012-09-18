@@ -12,6 +12,10 @@ class DocumentationController extends AppController {
           $this->pageTitle = 'Installation';
         }
 
+        function overview() {
+          $this->pageTitle = 'Overview';
+        }
+
         function ipv6() {
           $this->pageTitle = 'IPv6';
         }

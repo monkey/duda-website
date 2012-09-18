@@ -1,8 +1,8 @@
 <div class="hero-unit">
    <h2>Installation</h2>
    <p>
-       Start with Monkey is pretty easy, you don't need to be a privileged system user, you can run it
-       locally or install it in a generic path.
+       Start with Duda is pretty easy,
+
    </p>
 </div>
 
