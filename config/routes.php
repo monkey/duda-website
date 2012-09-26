@@ -33,7 +33,7 @@
  */
 	Router::connect('/', array('controller' => 'home', 'action' => 'index'));
 	Router::connect('/about', array('controller' => 'home', 'action' => 'about'));
-	Router::connect('/downloads', array('controller' => 'home', 'action' => 'downloads'));
+	Router::connect('/download', array('controller' => 'home', 'action' => 'download'));
 	Router::connect('/community', array('controller' => 'home', 'action' => 'community'));
 	Router::connect('/documentation', array('controller' => 'documentation', 'action' => 'index'));
 	Router::connect('/developers', array('controller' => 'home', 'action' => 'developers'));

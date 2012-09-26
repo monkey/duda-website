@@ -67,7 +67,10 @@
                   <li class="">
                   <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
                   </li>
-                  </ul>
+                 <li class="">
+                  <? echo $html->link('Download', array('controller' => 'download/')); ?>
+                  </li>
+                 </ul>
              </div> <!-- end span8 -->
           </div> <!-- end row fluid -->
 

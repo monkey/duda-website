@@ -13,7 +13,7 @@ class HomeController extends AppController {
 	function about(){
 	}
 
-	function downloads(){
+	function download() {
 
 	}
 
