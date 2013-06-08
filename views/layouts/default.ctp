@@ -39,7 +39,7 @@
 	?>
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-inner">
       <div class="navbar-inner">
         <div class="container">
          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -48,11 +48,11 @@
             <span class="icon-bar"></span>
           </a>
 
-          <div class="row-fluid">
-              <div class="span1" style="padding-top: 0.3em;">
+
+            <div class="span1 offset1" style="padding-top: 0.3em;">
                   <? echo $html->image('monkey_head.png'); ?>
               </div>
-              <div class="span10">
+              <div class="span8">
                   <? echo $html->link('Duda I/O',
                                       array('controller' => '/'),
                                       array('class' => 'brand', 'style' => 'color: #eae8d2;'));
@@ -72,21 +72,23 @@
                   </li>
                  </ul>
              </div> <!-- end span8 -->
-          </div> <!-- end row fluid -->
-
         </div>
       </div>
     </div>
    </div>
 
    <div class="container">
-      <?php $session->flash(); ?>
-      <?php echo $content_for_layout; ?>
-    <hr>
-    <footer>
-        <p>&copy; Copyright 2012 / Duda I/O - Eduardo Silva</p>
-      </footer>
-   </div> <!-- /container -->
+       <div class="span9 offset1">
+         <?php $session->flash(); ?>
+         <?php echo $content_for_layout; ?>
+       </div>
+     </div>
+   </div>
+   <hr>
+    <footer style="text-align:center">
+      <p>&copy; Copyright 2013 / Duda I/O - <a href="http://edsiper.linuxchile.cl">Eduardo Silva</a></p>
+    </footer>
+
 
 </body>
 </html>

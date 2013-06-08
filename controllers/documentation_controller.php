@@ -16,6 +16,10 @@ class DocumentationController extends AppController {
           $this->pageTitle = 'DudaC - Client Manager';
         }
 
+        function manual_setup() {
+          $this->pageTitle = 'Duda: Manual Setup';
+        }
+
         function hello_world_5_steps() {
           $this->pageTitle = 'Duda: Hello World! in 5 steps';
         }

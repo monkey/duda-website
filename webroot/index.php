@@ -53,6 +53,7 @@
 		define('CAKE_CORE_INCLUDE_PATH', '/var/www/cake');
 	}
 
+
 /**
  * Editing below this line should NOT be necessary.
  * Change at your own risk.
