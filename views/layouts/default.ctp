@@ -59,46 +59,68 @@
             <span class="icon-bar"></span>
           </a>
 
-
-            <div class="span1 offset1" style="padding-top: 0.3em;">
-                  <? echo $html->image('monkey_head.png'); ?>
-              </div>
-              <div class="span8">
-                  <? echo $html->link('Duda I/O',
+         <div class="row-fluid">
+           <div class="span1">
+           </div>
+           <div class="span1 offset1" style="padding-top: 0.3em; text-align:right;">
+              <? echo $html->image('monkey_head.png'); ?>
+           </div>
+           <div class="span10">
+             <? echo $html->link('Duda I/O',
                                       array('controller' => '/'),
                                       array('class' => 'brand', 'style' => 'color: #eae8d2;'));
                   ?>
 
-                  <div class="nav-collapse collapse">
-                  <ul class="nav">
-                  <li class="">
-                  <? echo $html->link('About', array('controller' => 'documentation',
-                                                     'action' => 'overview')); ?>
-                  </li>
-                  <li class="">
-                  <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
-                  </li>
+             <div class="nav-collapse collapse">
+               <ul class="nav">
                  <li class="">
-                  <? echo $html->link('Download', array('controller' => 'download/')); ?>
-                  </li>
-                 </ul>
-             </div> <!-- end span8 -->
+                   <? echo $html->link('About', array('controller' => 'documentation',
+                                                     'action' => 'overview')); ?>
+                 </li>
+                 <li class="">
+                   <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
+                 </li>
+                 <li class="">
+                   <? echo $html->link('Download', array('controller' => 'download/')); ?>
+                 </li>
+               </ul>
+             </div>
+
+           </div> <!-- span8 -->
+         </div>
         </div>
       </div>
     </div>
-   </div>
 
-   <div class="container">
-       <div class="span9 offset1">
-         <?php $session->flash(); ?>
-         <?php echo $content_for_layout; ?>
-       </div>
-     </div>
-   </div>
-   <hr>
-    <footer style="text-align:center">
-      <p>&copy; Copyright 2013 / Duda I/O - <a href="http://edsiper.linuxchile.cl">Eduardo Silva</a></p>
-    </footer>
+    <div class="container"  style="text-align:center">
+      <div class="row-fluid">
+        <div class="span10" style="text-align:left;">
+          <?php $session->flash(); ?>
+          <?php echo $content_for_layout; ?>
+        </div>
+
+        <div class="span2" style="text-align:left">
+          <h4>Get started</h4>
+          <ul>
+	    <li><a href='http://git.monkey-project.com'>Browse Code</a></li>
+	    <li><a href='http://lists.monkey-project.com/listinfo/duda'>Mailing List</a></li>
+          </ul>
+          <h4>Documentation</h4>
+          <ul>
+	    <li><a href='http://duda.io/api'>API</a></li>
+	    <li><a href='http://duda.io/documentation'>How To's</a></li>
+          </ul>
+
+        </div>
+
+
+
+      </div>
+    </div>
+    <hr>
+      <footer style="text-align:center">
+        <p>&copy; Copyright 2013 / Duda I/O - <a href="http://edsiper.linuxchile.cl">Eduardo Silva</a></p>
+      </footer>
 
 
 </body>
