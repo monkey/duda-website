@@ -14,18 +14,24 @@
       </p>
 
       <div class="row-fluid">
-        <div class="span5" style="text-align:center">
+        <div class="span4" style="text-align:center">
           <a class="btn btn-warning btn-large"
              href="http://git.monkey-project.com/?p=duda;a=summary">
             <i class="icon-white icon-download-alt"></i>
             GIT Repository... &raquo;
           </a>
         </div>
-        <div class="span5" style="text-align:center">
+        <div class="span4" style="text-align:center">
           <a class="btn btn-info btn-large" href="./documentation/overview">
             <i class="icon-white icon-info-sign"></i>
             Learn more... &raquo;</a>
         </div>
+        <div class="span4" style="text-align:center">
+          <a class="btn btn-success btn-large" href="./slides/">
+            <i class="icon-white icon-info-sign"></i>
+            Presentation... &raquo;</a>
+        </div>
+
       </div> <!-- end of row-fluid -->
     </div> <!-- end of span8 -->
   </div>   <!-- end of row -->
