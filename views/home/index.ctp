@@ -2,7 +2,7 @@
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div class="hero-unit">
   <div class="row-fluid">
-    <div class="span9">
+    <div class="span12">
       <h1>Duda web services <small>framework</small></h1>
       <p>
         Duda I/O is an event driven web services framework which exposes a friendly C API.
@@ -28,21 +28,11 @@
         </div>
       </div> <!-- end of row-fluid -->
     </div> <!-- end of span8 -->
-
-    <div class="span1">
-      <br>
-      <h2>Shortcuts</h2>
-      <ul>
-	<li><a href='http://git.monkey-project.com'>Browse Code</a></li>
-	<li><a href='http://lists.monkey-project.com/listinfo/duda'>Mailing List</a></li>
-      </ul>
-    </div>
-
   </div>   <!-- end of row -->
 </div>
 
 <div class="row-fluid">
-  <div class="span5">
+  <div class="span4">
     <h2>Why Duda ?</h2>
     <p></p>
     <p>
@@ -67,7 +57,7 @@
     </p>
     <br>
   </div>
-  <div class="span3">
+  <div class="span4">
     <h2>The Stack</h2>
     <p>The HTTP core is powered by <a href="http://monkey-project.com">Monkey</a>, a strong and mature open source web server for GNU/Linux.
       <a href="http://duda.io">Duda</a> is
@@ -82,7 +72,7 @@
       and scale properly on demand.
     </p>
   </div>
-  <div class="span3">
+  <div class="span4">
     <? echo $html->image('duda_architecture.png'); ?>
   </div>
 </div>
