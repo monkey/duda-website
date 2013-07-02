@@ -34,7 +34,7 @@ $ ./dudac -g</pre>
 <p>
    4) Run the Hello Webservice
 </p>
-<pre>$ ./dudac -w /path/to/duda-examples/001_hello_world/</pre>
+<pre>$ ./dudac -w ../duda-examples/001_hello_world/</pre>
 <br>
 
 <p>
