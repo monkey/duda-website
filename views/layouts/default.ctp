@@ -102,6 +102,7 @@
         <div class="span2" style="text-align:left">
           <h4>Get started</h4>
           <ul>
+	    <li><a href='http://bugs.duda.io'>Bug Tracker</a></li>
 	    <li><a href='http://git.monkey-project.com'>Browse Code</a></li>
 	    <li><a href='http://lists.monkey-project.com/listinfo/duda'>Mailing List</a></li>
           </ul>
