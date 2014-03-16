@@ -16,19 +16,19 @@
 <p>
    1) Get DudaC, the client manager:
 </p>
-<pre>$ git clone git://git.monkey-project.com/dudac</pre>
+<pre>$ git clone https://github.com/monkey/dudac</pre>
 <br>
 <p>
    2) Get the Web Services examples:
 </p>
-<pre>$ git clone git://git.monkey-project.com/duda-examples</pre>
+<pre>$ git clone https://github.com/monkey/duda-examples</pre>
 <br>
 
 <p>
    3) Initialize DudaC environment
 </p>
 <pre>$ cd dudac/
-$ ./dudac -g</pre>
+$ ./dudac -s</pre>
 <br>
 
 <p>
