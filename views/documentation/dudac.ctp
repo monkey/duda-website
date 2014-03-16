@@ -22,12 +22,12 @@
 <h3>Download</h3>
 <p>
    The first step is to download DudaC from the
-   <a href="http://git.monkey-project.com/?p=dudac;a=summary">GIT repository</a>,
+   <a href="http://github.com/monkey/dudac;a=summary">GIT repository</a>,
    for this you will need to have the GIT tools available in your system. The you need to run
    one simple command:
    <br><br>
    <ul>
-   <pre>$ git clone git://git.monkey-project.com/dudac</pre>
+   <pre>$ git clone https://github.com/monkey/dudac</pre>
    <br>
    </ul>
 </p>
@@ -43,28 +43,27 @@
    DudaC aims to download, build and configure every component of the stack to run a web service.            The first step after download it is to initialize the environment:
    <ul>
    <pre>$ cd dudac/
-$ ./dudac -g</pre>
+$ ./dudac -s</pre>
    </ul>
    <br>
-   The flag <strong>-g</strong> instruct DudaC to use GIT protocol to fetch the Monkey and Duda
-   sources. If you cannot connect directly using plain GIT, you can try the <strong>-s</strong> flag
+   The flag <strong>-s</strong> instruct DudaC to use HTTPS protocol to fetch the Monkey and Duda
+   sources. If you cannot connect directly using plain GIT, you can try the <strong>-g</strong> flag
    to use GIT over SSH. This step should take 1 or 2 minutes depending of your bandwith connection
    to internet, once it finish you should get an output like this:
    <br><br>
    <ul>
-   <pre>$ ./dudac -g
-Duda Client Manager - v0.4
+   <pre>$ ./dudac -s
+Duda Client Manager - v0.18
 http://duda.io
 http://monkey-project.com
 
-[+] Monkey: cloning source code    [OK]
-[+] Duda: cloning source code      [OK]
-[+] GIT Monkey: checkout master    [OK]
-[+] GIT Monkey: switch to new head [OK]
-[+] GIT Monkey: archive            [OK]
-[+] GIT Duda: archive              [OK]
-[+] Monkey: prepare build          [OK]
-[+] Monkey: building               [OK]
+[+] Monkey: cloning source code                                            [OK]
+[+] Duda: cloning source code                                              [OK]
+[+] GIT Monkey  : switch HEAD to 'master'                                  [OK]
+[+] GIT Monkey  : archive                                                  [OK]
+[+] GIT Duda    : archive                                                  [OK]
+[+] Monkey      : prepare build                                            [OK]
+[+] Monkey      : building                                                 [OK]
 </pre>
 </ul>
 </p>
@@ -82,23 +81,21 @@ http://monkey-project.com
    <br><br>
    <ul>
    <pre>$ ./dudac -w /path/to/webservice/
-Duda Client Manager - v0.4
+Duda Client Manager - v0.18
 http://duda.io
 http://monkey-project.com
 
-[+] GIT Monkey: checkout master    [OK]
-[+] GIT Monkey: switch to new head [OK]
-[+] GIT Duda: checkout master      [OK]
-[+] GIT Duda: switch to new head   [OK]
-[+] GIT Monkey: archive            [OK]
-[+] GIT Duda: archive              [OK]
-[+] Monkey: cleaning               [OK]
-[+] Monkey: prepare build          [OK]
-[+] Monkey: building               [OK]
-[+] WebService: clean              [OK]
-[+] WebService: build              [OK]
-[+] Monkey: configure HTTP Server  [OK]
-[+] Running HTTP Server            [http://localhost:2001]</pre>
+[+] GIT Monkey  : switch HEAD to 'master'                                  [OK]
+[+] GIT Duda    : switch HEAD to 'master'                                  [OK]
+[+] GIT Monkey  : archive                                                  [OK]
+[+] GIT Duda    : archive                                                  [OK]
+[+] Monkey      : cleaning                                                 [OK]
+[+] Monkey      : prepare build                                            [OK]
+[+] Monkey      : building                                                 [OK]
+[+] WebService  : clean                                                    [OK]
+[+] WebService  : build                                                    [OK]
+[+] Monkey      : configure HTTP Server                                    [OK]
+[+] Service Up  : http://localhost:2001/service/</pre>
    </ul>
    <br>
    By default DudaC will rebuild the environment components, if you want a fast run you can add the
@@ -106,14 +103,14 @@ http://monkey-project.com
    <br><br>
    <ul>
       <pre>$ ./dudac -f -w /path/to/webservice/
-Duda Client Manager - v0.4
+Duda Client Manager - v0.18
 http://duda.io
 http://monkey-project.com
 
-[+] WebService: clean              [OK]
-[+] WebService: build              [OK]
-[+] Monkey: configure HTTP Server  [OK]
-[+] Running HTTP Server            [http://localhost:2001]</pre>
+[+] WebService  : clean                                                    [OK]
+[+] WebService  : build                                                    [OK]
+[+] Monkey      : configure HTTP Server                                    [OK]
+[+] Service Up  : http://localhost:2001/service/</pre>
    </ul>
    <br>
    Make sure the service uses the proper TCP port that you want, by default it uses the port 2001,
@@ -121,14 +118,14 @@ http://monkey-project.com
    <br><br>
    <ul>
       <pre>$ ./dudac -f -w /path/to/webservice/ -p 8080
-Duda Client Manager - v0.4
+Duda Client Manager - v0.18
 http://duda.io
 http://monkey-project.com
 
-[+] WebService: clean              [OK]
-[+] WebService: build              [OK]
-[+] Monkey: configure HTTP Server  [OK]
-[+] Running HTTP Server            [http://localhost:8080]</pre>
+[+] WebService  : clean                                                    [OK]
+[+] WebService  : build                                                    [OK]
+[+] Monkey      : configure HTTP Server                                    [OK]
+[+] Service Up  : http://localhost:8080/service/</pre>
    </ul>
    <br>
 </p>
@@ -138,19 +135,32 @@ http://monkey-project.com
   As most of command line programs, you can see the detailed options available using the
   <strong>-h</strong> parameter:
   <pre>$ ./dudac -h
-Duda Client Manager - v0.4
+Duda Client Manager - v0.18
 http://duda.io
 http://monkey-project.com
 
-Usage: dudac [-g|-s] [-h] [-v] -w WEB_SERVICE_PATH
+Usage: dudac [-g|-s] [-S] [-h] [-v] [-A] [-J] [-T] -w WEB_SERVICE_PATH
 
-Options:
-  -p TCP_PORT		Set TCP port (default 2001)
-  -w WEB_SERVICE	Specify web service source path
-  -s			Clone/Update Monkey sources using SSH
-  -g			Clone/Update Monkey sources using GIT
-  -f			Do not rebuild Monkey (fast-run)
-  -r			Reset environment
-  -h			Print this help
-  -v			Print version</pre>
+Stack Build Options
+    -sGet stack sources using HTTPS
+    -gGet stack sources using GIT protocol (SSH)
+    -fDo not rebuild Monkey (fast-run)
+    -rReset environment
+
+Profiling and Trace
+    -AUse libc memory allocator instead of Jemalloc (disabled)
+    -XEnable Jemalloc statistics (disabled)
+    -JEnable Jemalloc profiling and leaks detection (disabled)
+    -TEnable Linux Trace Toolkit (disabled)
+
+HTTP Server Options
+    -p TCP_PORTSet TCP port (default 2001)
+    -w WEB_SERVICESpecify web service source path
+    -SWeb Service will run with SSL mode enabled
+    -M 'k1=v1,kn=vn'Override some web server config key/value
+
+Others
+    -hPrint this help
+    -uRedirect server output to STDOUT
+    -vPrint version</pre>
 </p>
