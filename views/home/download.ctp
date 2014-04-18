@@ -37,6 +37,12 @@ function release_line($version, $dir, $type="duda-client")
         <? release_line($latest, $dudac_dir); ?>
       </ul>
     </p>
+    <p>
+      If you use Pypi through the <i>pip</i> tool, you can get Duda Client issuing the following command:
+      <ul>
+        $ pip install dudac
+      </ul>
+    </p>
   </div>
   <div class="span5">
     <h3>Duda Plugin</h3>
