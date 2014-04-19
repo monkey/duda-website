@@ -70,7 +70,7 @@
                  <?=$html->link('Manual Setup', array('action' => 'manual_setup'));?>
                </li>
                <li>
-                  <?=$html->link('DudaC - Client Manager', array('action' => 'dudac'));?>
+                  <?=$html->link('Duda Client (DudaC)', array('action' => 'dudac'));?>
                </li>
                <li class="nav-header">
                   Tutorials
@@ -87,7 +87,7 @@
     </div>
     <hr>
     <footer>
-      <p>&copy; Copyright 2012 / Duda I/O - Eduardo Silva</p>
+      <p>&copy; Copyright 2012-2014 / Duda I/O - Eduardo Silva</p>
       </footer>
    </div> <!-- container -->
 
