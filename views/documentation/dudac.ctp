@@ -22,7 +22,7 @@
 <h3>Download</h3>
 <p>
    The first step is to download DudaC from the
-   <a href="http://github.com/monkey/dudac;a=summary">GIT repository</a>,
+   <a href="http://github.com/monkey/dudac">GIT repository</a>,
    for this you will need to have the GIT tools available in your system. The you need to run
    one simple command:
    <br><br>
@@ -53,7 +53,7 @@ $ ./dudac -s</pre>
    <br><br>
    <ul>
    <pre>$ ./dudac -s
-Duda Client Manager - v0.18
+Duda Client Manager - v0.20
 http://duda.io
 http://monkey-project.com
 
@@ -102,8 +102,8 @@ http://monkey-project.com
    <strong>-f</strong> flag:
    <br><br>
    <ul>
-      <pre>$ ./dudac -f -w /path/to/webservice/
-Duda Client Manager - v0.18
+      <pre>$ ./dudac -w /path/to/webservice/
+Duda Client Manager - v0.20
 http://duda.io
 http://monkey-project.com
 
@@ -117,8 +117,8 @@ http://monkey-project.com
    you can change that using the <strong>-p</strong> parameter:
    <br><br>
    <ul>
-      <pre>$ ./dudac -f -w /path/to/webservice/ -p 8080
-Duda Client Manager - v0.18
+      <pre>$ ./dudac -w /path/to/webservice/ -p 8080
+Duda Client Manager - v0.20
 http://duda.io
 http://monkey-project.com
 
@@ -135,32 +135,33 @@ http://monkey-project.com
   As most of command line programs, you can see the detailed options available using the
   <strong>-h</strong> parameter:
   <pre>$ ./dudac -h
-Duda Client Manager - v0.18
+Duda Client Manager - v0.20
 http://duda.io
 http://monkey-project.com
 
 Usage: dudac [-g|-s] [-S] [-h] [-v] [-A] [-J] [-T] -w WEB_SERVICE_PATH
 
 Stack Build Options
-    -sGet stack sources using HTTPS
-    -gGet stack sources using GIT protocol (SSH)
-    -fDo not rebuild Monkey (fast-run)
-    -rReset environment
+    -V    API level (default: 1)
+    -s    Get stack sources using HTTPS
+    -g    Get stack sources using GIT protocol (SSH)
+    -F    Force mode, rebuild the Stage area
+    -r    Reset environment
 
 Profiling and Trace
-    -AUse libc memory allocator instead of Jemalloc (disabled)
-    -XEnable Jemalloc statistics (disabled)
-    -JEnable Jemalloc profiling and leaks detection (disabled)
-    -TEnable Linux Trace Toolkit (disabled)
+    -A    Use libc memory allocator instead of Jemalloc (disabled)
+    -X    Enable Jemalloc statistics (disabled)
+    -J    Enable Jemalloc profiling and leaks detection (disabled)
+    -T    Enable Linux Trace Toolkit (disabled)
 
 HTTP Server Options
-    -p TCP_PORTSet TCP port (default 2001)
-    -w WEB_SERVICESpecify web service source path
-    -SWeb Service will run with SSL mode enabled
-    -M 'k1=v1,kn=vn'Override some web server config key/value
+    -p  TCP_PORT      Set TCP port (default 2001)
+    -w  WEB_SERVICE   Specify web service source path
+    -S                Web Service will run with SSL mode enabled
+    -M 'k1=v1,kn=vn'  Override some web server config key/value
 
 Others
-    -hPrint this help
-    -uRedirect server output to STDOUT
-    -vPrint version</pre>
+    -h    Print this help
+    -u    Redirect server output to STDOUT
+    -v    Print version</pre>
 </p>
