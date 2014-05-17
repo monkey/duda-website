@@ -58,12 +58,11 @@
       </ul>
     </p>
     <br>
-    <h2>License: LGPLv2</h2>
+    <h2>License</h2>
     <p></p>
     <p>
-      Duda is an open source project under the <a href="http://www.gnu.org/licenses/lgpl-2.1.html">GNU Lesser General Public License v2</a>. It means that you
-      <b>don't</b> need to open source your project (as well you <b>don't</b> need to  pay any fee for the stack). If is the case, you are only forced to release the modifications performed to
-      some stack component.
+      Duda I/O is an Open Source project under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>. It means that is commercial friendly,
+      you <b>don't</b> need to open your project (as well you <b>don't</b> need to  pay any fee for the stack).
     </p>
     <br>
   </div>
