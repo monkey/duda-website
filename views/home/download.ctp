@@ -1,19 +1,16 @@
 <?
 /* release  => directory */
 
-$dudac_versions = array('0.4.0'  => '0.4');
-$dudap_versions = array();
 
-foreach($dudac_versions as $dudac_latest => $dudac_dir) {
-    break;
-}
+$latest = "0.20";
+$type   = "duda-client";
 
 function release_line($version, $dir, $type="duda-client")
 {
         $site = "http://duda.io/";
         ?>
-            <a href="<?=$site."releases/".$type."/".$dir?>/dudac-<?=$version?>.tar.gz">dudac-<?=$version?>.tar.gz</a>
-            <code><a href="<?=$site?>releases/<?=$type?>/<?=$dir?>/dudac-<?=$version?>.tar.gz.md5">MD5</a></code>
+            <a href="<?=$site."releases/".$type?>/dudac-<?=$version?>.tar.gz">dudac-<?=$version?>.tar.gz</a>
+            <code><a href="<?=$site?>releases/dudac-<?=$version?>.tar.gz.md5">MD5</a></code>
 
 
         <?
@@ -29,7 +26,7 @@ function release_line($version, $dir, $type="duda-client")
 </p>
 
 <div class="row-fluid">
-  <div class="span4">
+  <div class="span5">
     <h3>Duda Client Manager</h3>
     <p>
       Duda Client Manager (DudaC) is a helper tool for fast building and deployment of web services. It will prepare
@@ -37,17 +34,20 @@ function release_line($version, $dir, $type="duda-client")
     </p>
     <p>
       <ul><br>
-        <? release_line($dudac_latest, $dudac_dir); ?>
+        <? release_line($latest, $dudac_dir); ?>
+      </ul>
+    </p>
+    <p>
+      If you use Pypi through the <i>pip</i> tool, you can get Duda Client issuing the following command:
+      <ul>
+        $ pip install dudac
       </ul>
     </p>
   </div>
-  <div class="span1">
-  </div>
-  <div class="span4">
+  <div class="span5">
     <h3>Duda Plugin</h3>
     <p>
-      To obtain Duda I/O source code, please check our <a href="http://git.monkey-project.com/?p=duda;">GIT repository</a>.
+      To obtain Duda I/O source code, please check our <a href="https://github.com/monkey/duda">GIT repository</a>.
     </p>
   </div>
 </div>
-

@@ -103,7 +103,7 @@
           <h4>Get started</h4>
           <ul>
 	    <li><a href='http://bugs.duda.io'>Bug Tracker</a></li>
-	    <li><a href='http://git.monkey-project.com'>Browse Code</a></li>
+	    <li><a href='http://github.com/monkey/duda'>Browse Code</a></li>
 	    <li><a href='http://lists.monkey-project.com/listinfo/duda'>Mailing List</a></li>
           </ul>
           <h4>Documentation</h4>
