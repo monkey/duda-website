@@ -67,9 +67,6 @@
                   <?=$html->link('Overview', array('action' => 'overview'));?>
                </li>
                <li>
-                 <?=$html->link('Manual Setup', array('action' => 'manual_setup'));?>
-               </li>
-               <li>
                   <?=$html->link('DudaC - Client Manager', array('action' => 'dudac'));?>
                </li>
                <li class="nav-header">
