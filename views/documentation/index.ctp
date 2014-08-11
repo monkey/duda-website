@@ -23,6 +23,12 @@
     </p>
   </div>
   <div class="span5">
+    <h3>Official Manual</h3>
+    <p>
+      The following manual is in work in process status: <a href="http://duda.io/documentation/manual/">Official Manual</a>
+    </p>
+  </div>
+  <div class="span5">
     <h3>API Documentation</h3>
     <p>
       The API Objects and Packages are fully documented <a href="http://duda.io/api/">here</a>
