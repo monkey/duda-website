@@ -2,7 +2,7 @@
 /* release  => directory */
 
 
-$latest = "0.23";
+$latest = "0.24";
 $type   = "duda-client";
 
 function release_line($version, $dir, $type="duda-client")
